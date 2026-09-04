@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Simple, human insurance cover from Felix & co Holdings.">
+    <title>Felix & co Holdings | Insurance made human</title>
+    <style>
+        :root { --ink:#0b1f3a; --muted:#5f6f85; --cream:#fff; --mint:#eef4fb; --orange:#163d6b; --line:#d8e1ec; }
+        * { box-sizing:border-box; margin:0; padding:0; }
+        body { font-family: Inter, ui-sans-serif, system-ui, -apple-system, sans-serif; color:var(--ink); background:#fff; line-height:1.5; }
+        a { color:inherit; text-decoration:none; }
+        .wrap { width:min(1120px, 90%); margin:auto; }
+        header { padding:24px 0; border-bottom:1px solid #eef1ee; }
+        nav { display:flex; align-items:center; justify-content:space-between; gap:24px; }
+        .logo { font-size:1.35rem; font-weight:800; letter-spacing:-.05em; }
+        .logo span { color:var(--orange); }
+        .links { display:flex; gap:30px; color:var(--muted); font-size:.95rem; }
+        .btn { display:inline-block; background:var(--ink); color:#fff; padding:13px 21px; border-radius:8px; font-weight:700; border:0; cursor:pointer; }
+        .btn.orange { background:var(--orange); }
+        .hero { min-height:calc(100vh - 82px); display:flex; align-items:center; background-image:linear-gradient(#0b1f3acc,#0b1f3acc),url('https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1800&q=85'); background-size:cover; background-position:center; color:#fff; padding:90px 0 100px; }
+        .hero-grid { display:grid; grid-template-columns:1.08fr .92fr; gap:70px; align-items:center; }
+        .eyebrow { color:var(--orange); text-transform:uppercase; letter-spacing:.14em; font-size:.76rem; font-weight:800; margin-bottom:18px; }
+        h1 { font-size:clamp(2.8rem, 6vw, 5.3rem); line-height:.98; letter-spacing:-.07em; max-width:650px; }
+        .hero p { color:#e1e9f3; font-size:1.1rem; max-width:510px; margin:25px 0 32px; }
+        .hero-art { min-height:360px; background:none; }
+        .sun, .card { display:none; }
+        .card strong { font-size:1.6rem; display:block; margin:8px 0 3px; }
+        .check { color:#163d6b; font-weight:700; }
+        section { padding:88px 0; }
+        .section-heading { text-align:center; max-width:600px; margin:0 auto 44px; }
+        h2 { font-size:clamp(2rem, 4vw, 3.2rem); letter-spacing:-.055em; line-height:1.05; }
+        .section-heading p { color:var(--muted); margin-top:14px; }
+        .features { display:grid; grid-template-columns:repeat(3,1fr); gap:22px; }
+        .feature { border:1px solid var(--line); border-radius:14px; padding:28px; background:#fff; }
+        .icon { font-size:1.8rem; margin-bottom:22px; }
+        .feature h3 { margin-bottom:8px; }
+        .feature p { color:var(--muted); font-size:.95rem; }
+        .pricing { background:#f5f8fc; }
+        .plans { display:grid; grid-template-columns:repeat(3,1fr); gap:20px; align-items:stretch; }
+        .plan { background:#fff; border:1px solid var(--line); border-radius:14px; padding:30px; display:flex; flex-direction:column; }
+        .plan.popular { border:2px solid var(--orange); transform:translateY(-10px); }
+        .badge { color:var(--orange); text-transform:uppercase; font-size:.7rem; font-weight:800; letter-spacing:.1em; margin-bottom:12px; }
+        .plan h3 { font-size:1.4rem; }
+        .price { font-size:2.5rem; font-weight:800; letter-spacing:-.06em; margin:13px 0 22px; }
+        .price small { color:var(--muted); font-size:.85rem; font-weight:500; letter-spacing:0; }
+        .plan ul { list-style:none; color:var(--muted); margin-bottom:28px; flex:1; }
+        .plan li { margin:12px 0; }
+        .plan li::before { content:'✓'; color:#163d6b; font-weight:800; margin-right:9px; }
+        .plan .btn { text-align:center; background:#e8eef6; color:var(--ink); }
+        .plan.popular .btn { background:var(--orange); color:#fff; }
+        .contact { display:flex; justify-content:space-between; align-items:center; gap:30px; background:var(--ink); color:white; border-radius:18px; padding:44px 50px; }
+        .contact p { color:#c5d2e2; margin-top:8px; }
+        footer { padding:30px 0; color:var(--muted); font-size:.9rem; display:flex; justify-content:space-between; }
+        @media (max-width:760px) { .links { display:none; } .hero { padding:60px 0; } .hero-grid, .features, .plans { grid-template-columns:1fr; gap:20px; } .hero-art { min-height:290px; } .plan.popular { transform:none; } .contact { display:block; padding:32px; } .contact .btn { margin-top:22px; } footer { display:block; } }
+    </style>
+</head>
+<body>
+    <header><nav class="wrap"><a class="logo" href="#top">Felix <span>&</span> co Holdings</a><div class="links"><a href="#cover">Coverage</a><a href="#plans">Plans</a><a href="#about">About us</a></div><a class="btn" href="#plans">Get covered</a></nav></header>
+    <main id="top">
+        <section class="hero"><div class="wrap hero-grid"><div><div class="eyebrow">Insurance, made human</div><h1>Protect what matters. Live a little lighter.</h1><p>Thoughtful insurance for life's big moments and everyday surprises. Clear cover, fair prices, and real people when you need us.</p><a class="btn orange" href="#plans">Find your cover &nbsp;→</a></div><div class="hero-art"><div class="sun"></div><div class="card"><span class="check">● &nbsp; Your cover is active</span><strong>Peace of mind</strong><span>For all the things worth protecting.</span></div></div></div></section>
+        <section id="cover"><div class="wrap"><div class="section-heading"><div class="eyebrow">Why Felix & co</div><h2>Insurance without the fine-print fog.</h2><p>We make it easy to understand, easy to buy, and easy to get help.</p></div><div class="features"><article class="feature"><div class="icon">♡</div><h3>Cover that fits</h3><p>Choose protection designed around your life, not a one-size-fits-all checklist.</p></article><article class="feature"><div class="icon">◌</div><h3>Claims made simple</h3><p>A friendly team and a straightforward process, so you can get back to normal faster.</p></article><article class="feature"><div class="icon">✦</div><h3>People first</h3><p>Honest advice, transparent pricing, and support from humans who listen.</p></article></div></div></section>
+        <section class="pricing" id="plans"><div class="wrap"><div class="section-heading"><div class="eyebrow">Monthly membership</div><h2>Pick your peace of mind.</h2><p>Flexible monthly plans. Cancel anytime. No complicated commitments.</p></div><div class="plans"><article class="plan"><h3>Essentials</h3><div class="price">$19<small>/ month</small></div><ul><li>Personal accident cover</li><li>24/7 support</li><li>Digital policy wallet</li></ul><a class="btn" href="#contact">Choose essentials</a></article><article class="plan popular"><div class="badge">Most popular</div><h3>Complete</h3><div class="price">$39<small>/ month</small></div><ul><li>Everything in Essentials</li><li>Home and contents cover</li><li>Priority claims support</li></ul><a class="btn" href="#contact">Choose complete</a></article><article class="plan"><h3>Plus</h3><div class="price">$69<small>/ month</small></div><ul><li>Everything in Complete</li><li>Travel protection</li><li>Premium worldwide support</li></ul><a class="btn" href="#contact">Choose plus</a></article></div></div></section>
+        <section id="contact"><div class="wrap contact"><div><div class="eyebrow">Ready when you are</div><h2>Let's protect your next chapter.</h2><p>Talk to our team and find the right cover today.</p></div><a class="btn orange" href="mailto:hello@felixandco.example">Talk to an adviser →</a></div></section>
+    </main>
+    <footer class="wrap"><span>© 2024 Felix & co Holdings</span><span>Insurance you can feel good about.</span></footer>
+</body>
+</html>
